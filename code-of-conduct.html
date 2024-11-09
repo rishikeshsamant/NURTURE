@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code of Conduct</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <style>
         /* Basic reset for better cross-browser compatibility */
         * {
@@ -79,10 +83,34 @@
 </head>
 <body>
 
+<!-- Header  -->
+
 <header>
-    <!-- Header  -->
-    
+    <nav>
+        <div class="logo">
+            <div class="heading">
+                <h1>NURTURE</h1>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <button class="sign-in">Sign In</button>
+            </div>
+        </div>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
+        <div class="nav-options" id="nav-options">
+            <ul class="options">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./articles.html">ARTICLES</a></li>
+                <li><a href="./guides.html">GUIDES</a></li>
+                <li><a href="./resources.html">RESOURCES</a></li>
+                <li><a href="./community.html">COMMUNITY</a></li>
+                <li><a href="./help.html">HELP</a></li>
+            </ul>
+        </div>
+    </nav>
 </header>
+
 
 <div class="container">
     <div class="content">
@@ -147,10 +175,59 @@
     </div>
 </div>
 
+<!-- Footer  -->
+
 <footer>
-    <!-- Footer -->
-    
+    <div class="footer-options">
+        <div class="foot-logo">
+            <h1>NURTURE</h1>
+            <p>together, we care and support</p>
+        </div>
+        <div class="foot-sections">
+            <ul>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./articles.html">ARTICLES</a></li>
+                <li><a href="./guides.html">GUIDES</a></li>
+                <li><a href="./resources.html">RESOURCES</a></li>
+            </ul>
+        </div>
+        <div class="foot-help-section">
+            <ul>
+                <li><a href="./community.html">COMMUNITY</a></li>
+                <li><a href="./help.html">HELP</a></li>
+                <li><a href="./faq.html">F.A.Q.</a></li>
+                <li><a href="./contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="foot-policies-section">
+            <ul>
+                <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
+                <li><a href="./terms-of-use.html">TERM OF USE</a></li>
+                <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
+            </ul>
+        </div>
+        <div class="foot-social-section">
+            <ul>
+                <div class="first-social">
+                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </div>
+                <div class="second-social">
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-copywrite">
+        <p>© 2024 NURTURE. All rights reserved. | Privacy Policy | Terms of Use | Code of Conduct</p>
+    </div>
 </footer>
+
+
+
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>
