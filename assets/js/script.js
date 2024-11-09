@@ -13,7 +13,7 @@ function createPost() {
     alert("Please add some text or an image to post.");
     return;
   }
-
+  
   let imageDataUrl = "";
   if (imageInput.files.length > 0) {
     const file = imageInput.files[0];
