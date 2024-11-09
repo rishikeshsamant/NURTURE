@@ -96,18 +96,18 @@ ul {
 
 /* main section styling begins from here  */
 
-.hero{
+.hero {
     height: auto;
     width: 100%;
     background-color: #fff;
 }
 
-.hero-image{
+.hero-image {
     height: 65vh;
     width: 100%;
 }
 
-.hero-image img{
+.hero-image img {
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -122,7 +122,7 @@ ul {
     justify-items: center;
 }
 
-.hero-cards{
+.hero-cards {
     display: flex;
     gap: 3vh;
 }
@@ -166,24 +166,129 @@ ul {
     font-size: 0.9rem;
 }
 
-.card2{
+.card2 {
     background-color: #f5c4ed;
 }
 
-.card3{
+.card3 {
     background-color: #c4d1f5;
 }
 
-.card4{
+.card4 {
     background-color: #c4f5cc;
 }
 
-.card5{
+.card5 {
     background-color: #ecf5c4;
 }
 
 
 /* main section styling ends here  */
+
+
+/* challenges section styling start here  */
+.challenges-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('https://cdn.usegalileo.ai/sdxl10/25bb055a-1575-4fde-85ec-a249cfffa61e.png');
+    background-size: cover;
+    background-position: center;
+    padding: 2.5rem;
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 480px;
+    margin: 5vh;
+}
+
+.challenges-section h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.challenges-section p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.challenges-btn{
+    height: 7vh;
+    width: 18vh;
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* Challenges Section */
+.section-title {
+    font-size: 1.375rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem 0.75rem;
+}
+
+.challenges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(158px, 1fr));
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+}
+
+.challenge-card {
+    background-color: #ffffff;
+    border: 1px solid #dce0e5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.challenge-card:hover{
+    scale: 1.05;
+}
+
+.challenge-card .fa-icon {
+    font-size: 24px;
+    color: #111418;
+}
+
+.challenge-card h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.challenge-card p {
+    color: #637588;
+    font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (min-width: 480px) {
+    .challenges-section {
+        padding: 2.5rem 5rem;
+    }
+
+    .section-title {
+        padding: 1rem 5rem 0.75rem;
+    }
+
+    .challenges {
+        padding: 1rem 5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* challenges section styling ends here  */
+
 
 /* contact us section styling from here  */
 .contact-section {
@@ -231,7 +336,7 @@ ul {
     gap: 20px;
 }
 
-.contact-button{
+.contact-button {
     padding: 10px 20px;
     font-size: 1rem;
     border: none;
