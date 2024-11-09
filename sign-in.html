@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 Level 3</title>
+</head>
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(90deg, #020024 0%, #c00ec0 35%, #c517c5 100%);
+}
+
+div.box {
+    border-radius: 4px;
+    display: grid;
+    height: 90vh;
+    width: 120vh;
+    background-color: #fff;
+    grid-template-areas: "form image";
+}
+
+.form {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: form;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-area: image;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+form {
+    width: 50vh;
+    box-sizing: border-box;
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    gap: 29px;
+}
+
+a {
+    text-align: center;
+}
+
+.signup {
+    letter-spacing: 1.2px;
+}
+
+span {
+    color: rgb(255, 0, 200);
+    font-weight: 600;
+}
+
+.signup:hover {
+    color: #a900f7;
+    filter: drop-shadow(0 0 5px #9601db);
+    cursor: pointer;
+}
+
+input {
+    height: 35px;
+    background-color: rgba(245, 209, 209, 0.616);
+    border: none;
+    border-radius: 3px;
+    color: black;
+    padding: 0px 20px;
+}
+
+input::placeholder {
+    color: #7544e9;
+}
+
+button {
+    height: 5vh;
+    width: 25vh;
+    border-color: #9601db;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: #9601db;
+    filter: drop-shadow(0 0 5px #9601db);
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    background-color: #fff;
+}
+
+span.error {
+    color: red;
+    font-weight: 200;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="form">
+                <form id="taskForm" action="#">
+                    <h2>LOGIN</h2>
+                    <input type="text" placeholder="Username" id="name">
+                    <span class="error" id="nameError"></span>
+                    <input type="text" placeholder="Email" id="email">
+                    <span class="error" id="emailError"></span>
+                    <input type="password" placeholder="password" id="password">
+                    <span class="error" id="passwordError"></span>
+                    <a>Forget Password</a>
+                    <div class="btn"><button class="submit">submit</button></div>
+                    <a>Not A member?<span class="signup">Signup</span></a>
+                </form>
+            </div>
+            <div class="img"> <img class=".image" src="undraw_mobile_development_re_wwsn.svg" alt="image" height="300">
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('taskForm').addEventListener('submit', function (event) {
+
+        event.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+
+        let validinfo = true;
+
+        document.querySelectorAll('.error').forEach(e => e.innerText = '');
+
+        if (name === '') {
+            validinfo = false;
+            document.getElementById('nameError').innerText = '*Please enter your name.';
+        }
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === '' || !emailPattern.test(email)) {
+            validinfo = false;
+            document.getElementById('emailError').innerText = '*Please enter a valid email address.';
+        }
+        if (password === '') {
+            validinfo = false;
+            document.getElementById('passwordError').innerText = '*Please enter a password.';
+        }
+        if (validinfo) {
+            alert('Form submitted successfully!');
+        } else {
+            alert('Please correct the errors before submitting.');
+        }
+    });
+});
+    </script>
+</body>
+
+</html>
