@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 * {
     margin: 0;
@@ -212,7 +214,7 @@ ul {
     margin-bottom: 1rem;
 }
 
-.challenges-btn{
+.challenges-btn {
     height: 7vh;
     width: 18vh;
     border: none;
@@ -245,7 +247,7 @@ ul {
     transition: all .3s ease-in-out;
 }
 
-.challenge-card:hover{
+.challenge-card:hover {
     scale: 1.05;
 }
 
@@ -364,52 +366,69 @@ ul {
 .contact-container {
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #e3f6f5;
-    border-radius: 10px;
+    padding: 40px;
+    background-color: #f5f9fb;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 800px;
 }
 
 .contact-container h2 {
-    font-size: 24px;
-    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
 
 .contact-container p {
-    color: #666;
-    margin-bottom: 20px;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    font-size: 16px;
     font-style: italic;
 }
 
-.form-detailes {
+.form-details {
     display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-.form-detailes input,
-.form-group textarea {
+.form-details input,
+.form-details textarea {
     flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-.form-detailes textarea {
-    height: 80px;
+.form-details input:focus,
+.form-details textarea:focus {
+    border-color: #6c5ce7;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.form-details textarea {
+    min-height: 100px;
     resize: vertical;
     width: 100%;
 }
 
 h3 {
-    font-size: 18px;
-    margin: 20px 0 10px;
-    color: #333;
+    font-size: 20px;
+    margin: 30px 0 10px;
+    color: #34495e;
 }
 
 .checkbox-group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -417,30 +436,39 @@ h3 {
 .checkbox-group label {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
+    font-size: 16px;
+    color: #7f8c8d;
 }
 
 .newsletter {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .newsletter label {
     font-size: 14px;
-    color: #555;
+    color: #7f8c8d;
 }
 
 button.form-submit {
-    padding: 10px 20px;
-    background-color: #6af1e6;
+    padding: 12px 30px;
+    background-color: #6c5ce7;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 50px;
+    font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button:hover {
-    background-color: #b5d6d3;
+button.form-submit:hover {
+    background-color: #5e54d6;
+    transform: translateY(-2px);
+}
+
+button.form-submit:active {
+    transform: translateY(0);
 }
 
 /* contact section styling begins ends here  */
@@ -620,6 +648,10 @@ button:hover {
 /* footer section styling start from here  */
 
 .foot-logo h1 {
+    font-family: "Jura", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
     font-size: 1.5rem;
     text-align: left;
 }
@@ -757,14 +789,15 @@ button:hover {
 
     .checkbox-group label {
         flex-basis: 100%;
+        text-align: left;
     }
 
     .contact-container {
         width: 90%;
-        padding: 15px;
+        padding: 20px;
     }
 
-    button {
+    button.form-submit {
         width: 100%;
     }
 
