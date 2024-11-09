@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* navbar section styling begins from here  */
+
+.logo {
+    height: 13vh;
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 55vw;
+}
+
+.search {
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 45vw;
+    background-color: #f1f1f1;
+    align-items: center;
+}
+
+.search button {
+    height: 5vh;
+    width: 10vh;
+    border: none;
+    background-color: #85f0e2;
+    border-radius: 25px;
+    margin-right: 2vh;
+}
+
+.nav-options {
+    height: 6vh;
+    width: 100%;
+    background-color: #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-options ul.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-options ul.options li {
+    font-size: 1rem;
+}
+
+.nav-options ul.options li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* navbar section styling ends here  */
+
+
+/* main section styling begins from here  */
+
+.main {
+    height: 45vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* main section styling ends here  */
+
+
+/* contact section styling begins from here  */
+
+.contact-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e3f6f5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.contact-container p {
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.form-detailes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-detailes input,
+.form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-detailes textarea {
+    height: 80px;
+    resize: vertical;
+    width: 100%;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.newsletter {
+    margin-bottom: 20px;
+}
+
+.newsletter label {
+    font-size: 14px;
+    color: #555;
+}
+
+button.form-submit {
+    padding: 10px 20px;
+    background-color: #6af1e6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b5d6d3;
+}
+
+/* contact section styling begins ends here  */
+
+
+/* footer section styling start from here  */
+
+.foot-logo h1 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.footer-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1rem;
+    background-color: #cfcfcf;
+    gap: 4rem;
+    text-align: center;
+}
+
+.footer-options .foot-sections ul li,
+.foot-help-section ul li,
+.foot-policies-section ul li,
+.foot-social-section ul li {
+    margin: 1em;
+    text-align: left;
+}
+
+.footer-options .foot-sections ul li:hover,
+.foot-help-section ul li:hover,
+.foot-policies-section ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot-social-section .first-social,
+.second-social{
+    display: flex;
+    font-size: 1.5rem;
+}
+
+
+.foot-social-section ul li:hover{
+    scale: 1.5;
+}
+
+.foot-social-section ul li .fa-envelope:hover{
+    color: rgb(255, 8, 0);
+}
+
+.foot-social-section ul li .fa-facebook:hover{
+    color: blue;
+}
+
+.foot-social-section ul li .fa-instagram:hover{
+    color: rgb(255, 0, 43);
+}
+
+.foot-social-section ul li .fa-youtube:hover{
+    color: rgb(255, 0, 0);
+}
+
+.foot-social-section ul li .fa-discord:hover{
+    color: rgb(47, 0, 255);
+}
+
+.footer-copywrite {
+    text-align: center;
+}
+
+/* footer section styling ends here  */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-options {
+        display: none; /* Initially hidden */
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #cfcfcf;
+        z-index: 1000;
+        padding-top: 3rem;
+        transition: opacity 0.3s ease;
+        opacity: 0;
+    }
+
+    .nav-options.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    .nav-options ul.options {
+        flex-direction: column;
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .nav-options ul.options li {
+        font-size: 1.5rem;
+    }
+
+
+    .form-details input,
+    .form-details textarea {
+        min-width: 100%;
+    }
+
+    .checkbox-group label {
+        flex-basis: 100%;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .footer-options {
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .foot-logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .foot-logo p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-options ul.options {
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .contact-container p {
+        font-size: 14px;
+    }
+
+    .footer-options {
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .foot-logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .foot-logo p {
+        font-size: 0.8rem;
+    }
+
+    .footer-options ul li {
+        margin: 0.5em;
+    }
+}
