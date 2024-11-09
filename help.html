@@ -9,9 +9,101 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <style>
-        .intro {
-            text-align: center;
-        }
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for content */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Flashcards Layout */
+.help-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.help-cards {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    font-size: 1.1rem;
+    color: #0066cc;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #004499;
+}
+
+/* Flashcard Hover Effect */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -48,14 +140,86 @@
         <div class="intro">
             <p>If you're facing challenges and need support, this is your resource. Here, you'll find contact information for government initiatives, NGOs, and trusted programs dedicated to providing the help you need. Reach out—support is available.</p>
         </div>
-    </div>
 
-    <div class="help-section">
-        <h3>Government and International Programs</h3>
-        <div class="help-section-program">
+        <div class="help-content">
+            <h3>Government and International Program</h3>
+            <div class="help-cards">
+                <div class="card">
+                    <img src="./assets/images/help/01.jpg" alt="WHO's Mental Health Gap Action Programme">
+                    <a href="#">WHO's Mental Health Gap Action Programme</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/02.jpg" alt="National Mental Health Programs">
+                    <a href="#">National Mental Health Programs</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/03.jpg" alt="Manodarpan Initiative">
+                    <a href="#">Manodarpan Initiative</a>
+                </div>
+            </div>
+
+            <h3>Emergency Support Contacts</h3>
+            <div class="help-cards">
+                <div class="card">
+                    <img src="./assets/images/help/04.jpg" alt="Kiran Helpline by Ministry of Social Justice and Empowerment Contact: 1800-599-0019">
+                    <a href="#">Kiran Helpline by Ministry of Social Justice and Empowerment Contact: 1800-599-0019</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/05.png" alt="AASRA">
+                    <a href="#">AASRA (Suicide Prevention) Contact: 91-22-2754-6669</a>
+                </div>
+            </div>
+
+            <h3>Online Support Communities</h3>
+            <div class="help-cards">
+                <div class="card">
+                    <img src="./assets/images/help/06.jpg" alt="YourDOST">
+                    <a href="#">YourDOST</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/07.png" alt="MANAS App by Indian Government">
+                    <a href="#">Manas App by Indian Government</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/08.png" alt="Minds Foundation">
+                    <a href="#">Manodarpan Initiative</a>
+                </div>
+            </div>
+
+            <h3>Counselling Services and Platforms</h3>
+            <div class="help-cards">
+                <div class="card">
+                    <img src="./assets/images/help/09.jpg" alt="eSanjeevani by Minsitry of Health and Family Welfare">
+                    <a href="#">eSanjeevani by Minsitry of Health and Family Welfare</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/010.jpg" alt="iCall by Tata Institute of Social Sciences">
+                    <a href="#">iCall by Tata Institute of Social Sciences</a>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/help/011.jpg" alt="MindPeers">
+                    <a href="#">MindPeers</a>
+                </div>
+            </div>
+
+            <h3>Government and International Program</h3>
+            <div class="help-cards">
+                <div class="card">
+                    <img src="./assets/images/help/012.png" alt="Unicef's Mental Health and Psychological Support (MHPSS) Program">
+                    <a href="#">Unicef's Mental Health and Psychological Support (MHPSS) Program</a>
+                </div>
+            </div>
             
         </div>
     </div>
+
 
 
 
