@@ -1,113 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Help</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <style>
-        /* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
 
-/* Container for content */
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 0;
-}
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-/* Intro Section */
-.intro {
-    text-align: center;
-    margin-bottom: 30px;
-}
+        .intro p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+        }
 
-.intro p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-}
+        .help-content h3 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
 
-/* Flashcards Layout */
-.help-content h3 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center;
-}
+        .help-cards {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
 
-.help-cards {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 30%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
 
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    width: 30%;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    margin-bottom: 20px;
-}
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
 
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+        .card a {
+            font-size: 1.1rem;
+            color: #0066cc;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
-.card a {
-    font-size: 1.1rem;
-    color: #0066cc;
-    text-decoration: none;
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
+        .card a:hover {
+            color: #004499;
+        }
 
-.card a:hover {
-    color: #004499;
-}
+        .card:hover {
+            transform: translateY(-10px);
+        }
 
-/* Flashcard Hover Effect */
-.card:hover {
-    transform: translateY(-10px);
-}
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .card {
-        width: 45%;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 100%;
-    }
-}
-
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <!-- Header  -->
+    <!-- header section starts here  -->
 
     <header>
         <nav>
@@ -120,7 +111,7 @@
                     <button class="sign-in">Sign In</button>
                 </div>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <div class="nav-options" id="nav-options">
                 <ul class="options">
                     <li><a href="./index.html">HOME</a></li>
@@ -134,11 +125,15 @@
             </div>
         </nav>
     </header>
+    <!-- header section ends here  -->
 
+    <!-- main section start here  -->
 
     <div class="container">
         <div class="intro">
-            <p>If you're facing challenges and need support, this is your resource. Here, you'll find contact information for government initiatives, NGOs, and trusted programs dedicated to providing the help you need. Reach out—support is available.</p>
+            <p>If you're facing challenges and need support, this is your resource. Here, you'll find contact
+                information for government initiatives, NGOs, and trusted programs dedicated to providing the help you
+                need. Reach out—support is available.</p>
         </div>
 
         <div class="help-content">
@@ -163,7 +158,8 @@
             <h3>Emergency Support Contacts</h3>
             <div class="help-cards">
                 <div class="card">
-                    <img src="./assets/images/help/04.jpg" alt="Kiran Helpline by Ministry of Social Justice and Empowerment Contact: 1800-599-0019">
+                    <img src="./assets/images/help/04.jpg"
+                        alt="Kiran Helpline by Ministry of Social Justice and Empowerment Contact: 1800-599-0019">
                     <a href="#">Kiran Helpline by Ministry of Social Justice and Empowerment Contact: 1800-599-0019</a>
                 </div>
 
@@ -212,21 +208,17 @@
             <h3>Government and International Program</h3>
             <div class="help-cards">
                 <div class="card">
-                    <img src="./assets/images/help/012.png" alt="Unicef's Mental Health and Psychological Support (MHPSS) Program">
+                    <img src="./assets/images/help/012.png"
+                        alt="Unicef's Mental Health and Psychological Support (MHPSS) Program">
                     <a href="#">Unicef's Mental Health and Psychological Support (MHPSS) Program</a>
                 </div>
             </div>
-            
         </div>
     </div>
 
+    <!-- main section ends here  -->
 
-
-
-
-
-
-    <!-- Footer  -->
+    <!-- footer section start here  -->
 
     <footer>
         <div class="footer-options">
@@ -272,12 +264,15 @@
             </div>
         </div>
         <div class="footer-copywrite">
-            <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
+            <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a
+                    href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
         </div>
     </footer>
 
-    
+    <!-- footer section ends here  -->
+
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
