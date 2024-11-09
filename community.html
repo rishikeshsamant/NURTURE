@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurture</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- nav sections begins from here  -->
+
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="heading">
+                    <h1>NURTURE</h1>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="sign-in">Sign In</button>
+                </div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
+            <div class="nav-options" id="nav-options">
+                <ul class="options">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- nav sections ends from here  -->
+
+    <!-- Post creation form begins here  -->
+    <div class="forum">
+        <div class="forum-post">
+            <div id="post-form">
+                <h2>COMMUNITY FORUM</h2>
+                <textarea id="post-content" rows="4" placeholder="Share something..."></textarea>
+                <input type="file" id="post-image" accept="image/*" />
+                <button onclick="createPost()">Post</button>
+            </div>
+    
+            <!-- Display posts -->
+            <div id="posts">
+                <h2>Community Posts</h2>
+            </div>
+        </div>
+
+        <div class="aside">
+            <div class="top-discussion">
+                <h3>Top Discussion Of The Week</h3>
+                The top discussion of the week are listed below don't forgot to check them.
+                <div class="detail">
+                    <h4>Details</h4>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="top-para">
+                    <p>I am suffering from hyperSyllabus from my college. Does anyone has the solution.</p>
+                </div>
+                <div class="detail">
+                    <h4>Details</h4>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="top-para">
+                    <p>I am suffering from hyperSyllabus from my college. Does anyone has the solution.</p>
+                </div>
+                <div class="detail">
+                    <h4>Details</h4>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="top-para">
+                    <p>I am suffering from hyperSyllabus from my college. Does anyone has the solution.</p>
+                </div>
+            </div>
+            <div class="recommended">
+                <h3>Recommended Topics</h3>
+                <div class="recommended-topics">
+                    <ul>
+                        <li>Depression</li>
+                        <li>Stress</li>
+                        <li>Anxiety</li>
+                        <li>Health</li>
+                        <li>Disorder</li>
+                    </ul>
+                </div>
+                <div class="red-para">
+                    <h4>See more topics</h4>
+                </div>
+            </div>
+
+
+            <div class="people-to-follow">
+                <h2>People You Can Follow</h2>
+                <div class="community-people">
+                    <div class="image">
+                        <img src="assets/Images/dev profile new.jpg" alt="people image">
+                    </div>
+                    <div class="people-detail">
+                        <h5>Yasir Akhlaque</h5>
+                        <p>Talks about mental problems</p>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="community-people">
+                    <div class="image">
+                        <img src="assets/Images/dev profile new.jpg" alt="people image">
+                    </div>
+                    <div class="people-detail">
+                        <h5>Rishikesh Samant</h5>
+                        <p>Help you to cure anxiety pr......</p>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <div class="community-people">
+                    <div class="image">
+                        <img src="assets/Images/dev profile new.jpg" alt="people image">
+                    </div>
+                    <div class="people-detail">
+                        <h5>Sajal Gangwar</h5>
+                        <p>Guide you to success from ....</p>
+                    </div>
+                    <div class="follow-btn">
+                        <button>Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Post creation form ends here -->
+
+
+
+    <!-- footer section begins from here  -->
+
+    <footer>
+        <div class="footer-options">
+            <div class="foot-logo">
+                <h1>NURTURE</h1>
+                <p>together, we care and support</p>
+            </div>
+            <div class="foot-sections">
+                <ul>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                </ul>
+            </div>
+            <div class="foot-help-section">
+                <ul>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                    <li><a href="./faq.html">F.A.Q.</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="foot-policies-section">
+                <ul>
+                    <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
+                    <li><a href="./terms-of-use.html">TERM OF USE</a></li>
+                    <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
+                </ul>
+            </div>
+            <div class="foot-social-section">
+                <ul>
+                    <div class="first-social">
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                    <div class="second-social">
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copywrite">
+            <p>© 2024 NURTURE. All rights reserved. | Privacy Policy | Terms of Use | Code of Conduct</p>
+        </div>
+    </footer>
+
+    <!-- footer section ends from here  -->
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
