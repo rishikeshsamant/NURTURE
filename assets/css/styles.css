@@ -16,9 +16,12 @@ ul {
     list-style: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
+
+
+/* navbar section styling begins from here  */
 
 .logo {
     height: 13vh;
@@ -45,8 +48,8 @@ ul {
     align-items: center;
 }
 
-.search button{
-    height:5vh;
+.search button {
+    height: 5vh;
     width: 10vh;
     border: none;
     background-color: #85f0e2;
@@ -74,10 +77,15 @@ ul {
     font-size: 1rem;
 }
 
-.nav-options ul.options li:hover{
+.nav-options ul.options li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/* navbar section styling ends here  */
+
+
+/* main section styling begins from here  */
 
 .main {
     height: 45vh;
@@ -85,7 +93,10 @@ ul {
     background-color: #fff;
 }
 
-/* contact section styling here  */
+/* main section styling ends here  */
+
+
+/* contact section styling begins from here  */
 
 .contact-container {
     width: 100%;
@@ -169,7 +180,10 @@ button:hover {
     background-color: #b5d6d3;
 }
 
+/* contact section styling begins ends here  */
 
+
+/* footer section styling start from here  */
 
 .foot-logo h1 {
     font-size: 1.5rem;
@@ -196,15 +210,41 @@ button:hover {
 
 .footer-options .foot-sections ul li:hover,
 .foot-help-section ul li:hover,
-.foot-policies-section ul li:hover{
+.foot-policies-section ul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
+.foot-social-section ul li:hover{
+    scale: 1.5;
+}
 
-.footer-copywrite{
+.foot-social-section ul li .fa-envelope:hover{
+    color: rgb(255, 8, 0);
+}
+
+.foot-social-section ul li .fa-facebook:hover{
+    color: blue;
+}
+
+.foot-social-section ul li .fa-instagram:hover{
+    color: rgb(255, 0, 43);
+}
+
+.foot-social-section ul li .fa-youtube:hover{
+    color: rgb(255, 0, 0);
+}
+
+.foot-social-section ul li .fa-discord:hover{
+    color: rgb(47, 0, 255);
+}
+
+.footer-copywrite {
     text-align: center;
 }
+
+/* footer section styling ends here  */
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -217,6 +257,27 @@ button:hover {
         flex-direction: column;
         gap: 0.5rem;
         font-size: 0.9rem;
+    }
+
+
+    .form-details input,
+    .form-details textarea {
+        min-width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .checkbox-group label {
+        flex-basis: 100%;
+        /* Full width for checkboxes on smaller screens */
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
     }
 
     .footer-options {
@@ -246,6 +307,18 @@ button:hover {
         flex-direction: column;
         gap: 0.5rem;
         font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .contact-container p {
+        font-size: 14px;
     }
 
     .footer-options {
