@@ -192,7 +192,174 @@ button:hover {
 /* contact section styling begins ends here  */
 
 
+/* Community forum styling begins from here  */
 
+.forum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    height: 160vh;
+}
+
+
+.forum-post {
+    height: 160vh;
+}
+
+#post-form,
+#posts {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#post-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    resize: vertical;
+    border: none;
+}
+
+#post-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+#post-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#post-form button:hover {
+    background-color: #0056b3;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.forum .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.aside .top-discussion {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.aside .detail {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 8px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.384);
+}
+
+.aside .top-para {
+    margin: 2vh 1vh;
+}
+
+.aside .recommended {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    margin: 2vh 0;
+}
+
+.aside .recommended-topics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .recommended-topics ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.aside .recommended-topics ul li {
+    padding: 8px;
+    list-style: none;
+    background-color: #8a818149;
+    border-radius: 15px;
+}
+
+.aside .recommended h4 {
+    color: rgb(255, 51, 0);
+}
+
+.aside .people-to-follow {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    margin: 2vh 0;
+}
+
+.aside .people-to-follow .community-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: .4rem;
+}
+
+.image {
+    height: 5vh;
+    width: 5vh;
+}
+
+.image img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.aside .people-to-follow .follow-btn button {
+    border: none;
+    height: 5vh;
+    width: 10vh;
+}
+
+
+/* Community forum styling ends here  */
 
 /* footer section styling start from here  */
 
@@ -229,33 +396,33 @@ button:hover {
 }
 
 .foot-social-section .first-social,
-.second-social{
+.second-social {
     display: flex;
     font-size: 1.5rem;
 }
 
 
-.foot-social-section ul li:hover{
+.foot-social-section ul li:hover {
     scale: 1.5;
 }
 
-.foot-social-section ul li .fa-envelope:hover{
+.foot-social-section ul li .fa-envelope:hover {
     color: rgb(255, 8, 0);
 }
 
-.foot-social-section ul li .fa-facebook:hover{
+.foot-social-section ul li .fa-facebook:hover {
     color: blue;
 }
 
-.foot-social-section ul li .fa-instagram:hover{
+.foot-social-section ul li .fa-instagram:hover {
     color: rgb(255, 0, 43);
 }
 
-.foot-social-section ul li .fa-youtube:hover{
+.foot-social-section ul li .fa-youtube:hover {
     color: rgb(255, 0, 0);
 }
 
-.foot-social-section ul li .fa-discord:hover{
+.foot-social-section ul li .fa-discord:hover {
     color: rgb(47, 0, 255);
 }
 
@@ -267,13 +434,36 @@ button:hover {
 
 
 /* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .forum {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        height: 100%;
+        width: 100%;
+    }
+
+    .forum-post{
+        height: auto;
+    }
+
+    .forum-post,
+    .aside {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
 
     .nav-options {
-        display: none; /* Initially hidden */
+        display: none;
         flex-direction: column;
         align-items: center;
         position: fixed;
@@ -322,6 +512,40 @@ button:hover {
         width: 100%;
     }
 
+
+    .forum-post #post-form,
+    .forum-post #posts,
+    .aside .top-discussion,
+    .aside .recommended,
+    .aside .people-to-follow {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+
+    .forum-post #post-form textarea {
+        font-size: 14px;
+    }
+
+    .forum .aside {
+        width: 100%;
+    }
+
+    .aside .recommended-topics ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .aside .people-to-follow,
+    .top-discussion,
+    .recommended{
+        width: 77vw;
+    }
+
+    .aside .recommended-topics ul li {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
     .footer-options {
         /* flex-wrap: wrap; */
         flex-direction: row;
@@ -357,6 +581,27 @@ button:hover {
 
     .contact-container p {
         font-size: 14px;
+    }
+
+
+    .forum-post #post-form h2,
+    .forum-post #posts h2,
+    .aside h3,
+    .aside h4 {
+        font-size: 1rem;
+    }
+
+    .aside .community-people {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .aside .community-people .image {
+        width: 15%;
+    }
+
+    .aside .community-people .follow-btn button {
+        width: 100%;
     }
 
     .footer-options {
