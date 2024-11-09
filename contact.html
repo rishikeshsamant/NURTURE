@@ -25,15 +25,16 @@
                     <button class="sign-in">Sign In</button>
                 </div>
             </div>
-            <div class="nav-options">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
+            <div class="nav-options" id="nav-options">
                 <ul class="options">
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>ARTICLES</li>
-                    <li>GUIDES</li>
-                    <li>RESOURCES</li>
-                    <li>COMMUNITY</li>
-                    <li>HELP</li>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">ARTICLES</a></li>
+                    <li><a href="#">GUIDES</a></li>
+                    <li><a href="#">RESOURCES</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">HELP</a></li>
                 </ul>
             </div>
         </nav>
@@ -99,7 +100,7 @@
                     <li><a href="#">COMMUNITY</a></li>
                     <li><a href="#">HELP</a></li>
                     <li><a href="#">F.A.Q.</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
                 </ul>
             </div>
             <div class="foot-policies-section">
@@ -111,11 +112,15 @@
             </div>
             <div class="foot-social-section">
                 <ul>
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    <div class="first-social">
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                    <div class="second-social">
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -125,6 +130,8 @@
     </footer>
 
      <!-- footer section ends from here  -->
+
+     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
