@@ -1,167 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; }
-        .container { width: 90%; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1, h2, h3 { color: #282c34; margin-bottom: 20px; }
-        .intro, .about-section { text-align: center; margin-bottom: 30px; }
-        .intro h2 { font-size: 2rem; color: #333; }
-        .about-section { background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); }
-        .about-section h3 { font-size: 1.5rem; color: #333; margin-bottom: 15px; }
-        .about-section p, .about-section ul li { font-size: 1rem; color: #666; line-height: 1.8; }
-        .emoji { font-size: 1.5rem; margin-right: 10px; }
-        
-        
-        ul { list-style-type: none; padding: 0; }
-        ul li { margin-bottom: 10px; }
+        body {
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2,
+        h3 {
+            color: #282c34;
+            margin-bottom: 20px;
+        }
+
+        .intro,
+        .about-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .about-section p,
+        .about-section ul li {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .about-section ul li {
+            margin-bottom: 10px;
+        }
+
         @media (max-width: 768px) {
-            .container { width: 100%; padding: 10px; }
-            h1 { font-size: 1.5rem; }
-            h2 { font-size: 1.2rem; }
-            .about-section h3 { font-size: 1.2rem; }
-            .about-section p, .about-section ul li { font-size: 0.9rem; }
-            
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .about-section h3 {
+                font-size: 1.2rem;
+            }
+
+            .about-section p,
+            .about-section ul li {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<!-- Header  -->
+    <!-- Header start from here-->
 
-<header>
-    <nav>
-        <div class="logo">
-            <div class="heading">
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="heading">
+                    <h1>nurture</h1>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="sign-in">Sign In</button>
+                </div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-options" id="nav-options">
+                <ul class="options">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header ends here  -->
+
+
+    <!-- main start here  -->
+
+    <div class="container">
+        <div class="intro">
+            <h2>Welcome to NURTURE!</h2>
+            <p>Your go-to support system for mental health and self-care. We're so glad you're here! 🌿</p>
+        </div>
+        <div class="about-section">
+            <h3><span class="emoji">🌟</span> Who We Are</h3>
+            <p>At NURTURE, we believe mental health is something everyone should be able to talk about, without fear or
+                shame. We know that life as a student can feel overwhelming—juggling assignments, exams, expectations,
+                and personal struggles. But guess what? You don't have to go through it alone. We're here to help you
+                manage stress, tackle anxiety, and improve your mental well-being.</p>
+        </div>
+        <div class="about-section">
+            <h3><span class="emoji">📚</span> What You'll Find Here</h3>
+            <p>Our website is packed with amazing tools and resources that are created just for you. Here's a sneak peek
+                at what you can find:</p>
+            <ul>
+                <li><strong>Helpful Guides & Articles:</strong> Practical, easy-to-read advice on dealing with stress,
+                    anxiety, and building healthier habits. We keep it simple and relatable—no complicated jargon,
+                    promise! 📝</li>
+                <li><strong>A Supportive Community:</strong> Connect with students who understand what you're going
+                    through. Share stories, give and receive support, and know that you're never alone. 🤝</li>
+                <li><strong>Personalized Experience:</strong> Create an account to keep track of your progress, bookmark
+                    resources, and receive personalized recommendations tailored just for you. 🔑</li>
+            </ul>
+        </div>
+        <div class="about-section">
+            <h3><span class="emoji">💭</span> Why We Started This</h3>
+            <p>We started NURTURE because we understand how intense and overwhelming student life can be. Our team, made
+                up of mental health advocates, students, and professionals, saw a real need for a space where students
+                could easily access mental health resources. We believe everyone deserves to feel heard, supported, and
+                understood. 🌱</p>
+        </div>
+        <div class="about-section">
+            <h3><span class="emoji">🤝</span> Our Promise to You</h3>
+            <p>We're here to help you feel supported, no matter where you are in your mental health journey. Here's what
+                we promise:</p>
+            <ul>
+                <li><strong>Easy Access:</strong> Mental health resources should be available to everyone, no matter
+                    where you are or what your financial situation looks like. That's why everything on our platform is
+                    free to use. 💚</li>
+                <li><strong>A Judgment-Free Zone:</strong> Whatever you're going through, we're here to listen and
+                    support you without judgment. 🙌</li>
+                <li><strong>Empowering Resources:</strong> Our aim is to empower you to manage your well-being
+                    confidently. We're not here to replace professional support—but to complement it. 🦋</li>
+            </ul>
+        </div>
+        <div class="about-section">
+            <h3><span class="emoji">🔒</span> Privacy First</h3>
+            <p>Your trust means everything to us. We take privacy seriously. You control what you share, and we're
+                dedicated to keeping your personal information safe. Our <a href="#">Privacy Policy</a> has all the
+                details on how we protect your data. 🔐</p>
+        </div>
+    </div>
+
+    <!-- main section ends here  -->
+
+
+    <!-- Footer start here-->
+
+    <footer>
+        <div class="footer-options">
+            <div class="foot-logo">
                 <h1>nurture</h1>
+                <p>together, we care and support</p>
             </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button class="sign-in">Sign In</button>
+            <div class="foot-sections">
+                <ul>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                </ul>
+            </div>
+            <div class="foot-help-section">
+                <ul>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                    <li><a href="./faq.html">F.A.Q.</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="foot-policies-section">
+                <ul>
+                    <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
+                    <li><a href="./terms-of-use.html">TERM OF USE</a></li>
+                    <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
+                </ul>
+            </div>
+            <div class="foot-social-section">
+                <ul>
+                    <div class="first-social">
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                    <div class="second-social">
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    </div>
+                </ul>
             </div>
         </div>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
-        <div class="nav-options" id="nav-options">
-            <ul class="options">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./articles.html">ARTICLES</a></li>
-                <li><a href="./guides.html">GUIDES</a></li>
-                <li><a href="./resources.html">RESOURCES</a></li>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./help.html">HELP</a></li>
-            </ul>
+        <div class="footer-copywrite">
+            <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a
+                    href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
         </div>
-    </nav>
-</header>
+    </footer>
 
+    <!-- Footer start here-->
 
-<div class="container">
-    <div class="intro">
-        <h2>Welcome to NURTURE!</h2>
-        <p>Your go-to support system for mental health and self-care. We're so glad you're here! 🌿</p>
-    </div>
-
-    <div class="about-section">
-        <h3><span class="emoji">🌟</span> Who We Are</h3>
-        <p>At NURTURE, we believe mental health is something everyone should be able to talk about, without fear or shame. We know that life as a student can feel overwhelming—juggling assignments, exams, expectations, and personal struggles. But guess what? You don't have to go through it alone. We're here to help you manage stress, tackle anxiety, and improve your mental well-being.</p>
-    </div>
-
-    <div class="about-section">
-        <h3><span class="emoji">📚</span> What You'll Find Here</h3>
-        <p>Our website is packed with amazing tools and resources that are created just for you. Here's a sneak peek at what you can find:</p>
-        <ul>
-            <li><strong>Helpful Guides & Articles:</strong> Practical, easy-to-read advice on dealing with stress, anxiety, and building healthier habits. We keep it simple and relatable—no complicated jargon, promise! 📝</li>
-            <li><strong>A Supportive Community:</strong> Connect with students who understand what you're going through. Share stories, give and receive support, and know that you're never alone. 🤝</li>
-            <li><strong>Personalized Experience:</strong> Create an account to keep track of your progress, bookmark resources, and receive personalized recommendations tailored just for you. 🔑</li>
-        </ul>
-    </div>
-
-    <div class="about-section">
-        <h3><span class="emoji">💭</span> Why We Started This</h3>
-        <p>We started NURTURE because we understand how intense and overwhelming student life can be. Our team, made up of mental health advocates, students, and professionals, saw a real need for a space where students could easily access mental health resources. We believe everyone deserves to feel heard, supported, and understood. 🌱</p>
-    </div>
-
-    <div class="about-section">
-        <h3><span class="emoji">🤝</span> Our Promise to You</h3>
-        <p>We're here to help you feel supported, no matter where you are in your mental health journey. Here's what we promise:</p>
-        <ul>
-            <li><strong>Easy Access:</strong> Mental health resources should be available to everyone, no matter where you are or what your financial situation looks like. That's why everything on our platform is free to use. 💚</li>
-            <li><strong>A Judgment-Free Zone:</strong> Whatever you're going through, we're here to listen and support you without judgment. 🙌</li>
-            <li><strong>Empowering Resources:</strong> Our aim is to empower you to manage your well-being confidently. We're not here to replace professional support—but to complement it. 🦋</li>
-        </ul>
-    </div>
-
-    <div class="about-section">
-        <h3><span class="emoji">🔒</span> Privacy First</h3>
-        <p>Your trust means everything to us. We take privacy seriously. You control what you share, and we're dedicated to keeping your personal information safe. Our <a href="#">Privacy Policy</a> has all the details on how we protect your data. 🔐</p>
-    </div>
-
-    
-</div>
-
-
-<!-- Footer  -->
-
-<footer>
-    <div class="footer-options">
-        <div class="foot-logo">
-            <h1>nurture</h1>
-            <p>together, we care and support</p>
-        </div>
-        <div class="foot-sections">
-            <ul>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./articles.html">ARTICLES</a></li>
-                <li><a href="./guides.html">GUIDES</a></li>
-                <li><a href="./resources.html">RESOURCES</a></li>
-            </ul>
-        </div>
-        <div class="foot-help-section">
-            <ul>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./help.html">HELP</a></li>
-                <li><a href="./faq.html">F.A.Q.</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
-        </div>
-        <div class="foot-policies-section">
-            <ul>
-                <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
-                <li><a href="./terms-of-use.html">TERM OF USE</a></li>
-                <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
-            </ul>
-        </div>
-        <div class="foot-social-section">
-            <ul>
-                <div class="first-social">
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </div>
-                <div class="second-social">
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                </div>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-copywrite">
-        <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
-    </div>
-</footer>
-
-
-
-<script src="assets/js/script.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

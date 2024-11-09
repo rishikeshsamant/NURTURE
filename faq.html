@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
-
-
     <style>
-        /* Basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
@@ -29,7 +22,8 @@
             padding: 20px;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             color: #333;
             margin-bottom: 20px;
         }
@@ -56,13 +50,12 @@
             color: #666;
         }
 
-        /* Emoji Style */
         .emoji {
             font-size: 1.2rem;
             margin-right: 10px;
         }
 
-        /* Responsive styles */
+        /* Responsive styles start here*/
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -83,172 +76,213 @@
         }
     </style>
 </head>
+
 <body>
 
-<!-- Header  -->
+    <!-- header section starts here  -->
 
-<header>
-    <nav>
-        <div class="logo">
-            <div class="heading">
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="heading">
+                    <h1>nurture</h1>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="sign-in">Sign In</button>
+                </div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-options" id="nav-options">
+                <ul class="options">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- header section ends here  -->
+
+    <!-- main section start here  -->
+    <div class="container">
+        <div class="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+
+            <div class="faq-item">
+                <h3><span class="emoji">❓</span>1. What is NURTURE?</h3>
+                <p>NURTURE is a safe and supportive online platform designed to help students facing mental health
+                    challenges such as stress, anxiety, peer pressure, and time management. We offer expert resources,
+                    community support, and valuable tools, all in one place, to help students take control of their
+                    well-being. 🧠💪</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">💡</span>2. Why is NURTURE focused on mental health for students?</h3>
+                <p>Students experience unique pressures—academic stress, peer pressure, and self-doubt—that can deeply
+                    affect their mental health. Unfortunately, these issues are often overlooked. Our platform shines a
+                    light on these hidden struggles and provides a safe space for students to talk, learn, and find
+                    solutions. We're here to support you! 💬🌱</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🚫</span>3. Is NURTURE a replacement for therapy?</h3>
+                <p>No, our platform is not a substitute for professional therapy. We provide resources and support to
+                    help students manage mental health issues but if you're facing severe mental health struggles, it's
+                    important to consult with a licensed professional or counselor. 💼💙</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🔑</span>4. How do I get started on the website?</h3>
+                <p>Simply start by exploring our different sections, such as stress management, coping with anxiety, or
+                    dealing with peer pressure. Use our search function to find specific topics. Creating an account
+                    allows you to save progress and personalize your experience. 💻✨</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🔒</span>5. Is my information kept private?</h3>
+                <p>Absolutely! Your privacy is our priority. We do not share your personal information, and we encourage
+                    users to avoid posting sensitive details on public forums. To understand how we handle your data,
+                    check out our Privacy Policy. 🔐</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">💬</span>6. How does the forum work?</h3>
+                <p>Our forum is a supportive, anonymous space where students can share their thoughts, ask questions,
+                    and connect with others. You'll find no judgment, only understanding. The goal is to foster empathy
+                    and help each other through difficult times. 🤝🌟</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">👥</span>7. Do I need to create an account to interact in the forum?</h3>
+                <p>No, you don't need an account to read forum discussions. However, if you want to post questions,
+                    comment, or save your progress, you'll need to create a free account. 🔑📝</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🚨</span>8. What if I need immediate help?</h3>
+                <p>If you're in immediate crisis or need urgent support, please reach out to a licensed mental health
+                    professional, contact a local crisis hotline or reach out to our help page, but our platform is not
+                    an emergency service, we provide resources to help you manage mental health on a day-to-day basis.
+                    📞❤️</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🔍</span>9. Can I trust the resources shared on this site?</h3>
+                <p>Yes! We don't create the content ourselves, but we collaborate with mental health professionals,
+                    expert volunteers, and trusted platforms to provide accurate, reliable, and helpful resources. Our
+                    goal is to make it easy for you to access the best help available. 🌟🔗</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🤝</span>10. Can I contribute content to the site?</h3>
+                <p>If you're passionate about mental health and want to contribute, we'd love to hear from you! Whether
+                    you're a student, professional, or mental health advocate, reach out to us via our contact page or
+                    social platforms. 🌈✍️</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">💭</span>11. How do I know if I'm dealing with mental health challenges?</h3>
+                <p>If you're feeling overwhelmed, anxious, or facing issues like stress or insecurity, you might be
+                    experiencing mental health challenges. We provide resources to help you understand what you're going
+                    through and offer strategies for managing these emotions. You are not alone. 💬❤️</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🛑</span>12. Are there any resources for students who feel insecure or fear
+                    failure?</h3>
+                <p>Yes! We offer guides to help students deal with feelings of insecurity, fear of failure, and other
+                    challenges that can hold you back. These struggles are common, but they don't have to define you.
+                    Start by reading our guides on self-confidence and overcoming performance anxiety. 🌟💪</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">⚠️</span>13. Is there any way to contact someone if I feel unsafe or
+                    uncomfortable on the platform?</h3>
+                <p>If at any point you feel unsafe or uncomfortable while using our platform, please reach out to us
+                    immediately. We take safety seriously, and you can contact us via our social paltforms. Your
+                    well-being is our top priority. 📩💌</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">💸</span>14. Are the resources and services available on this platform free?
+                </h3>
+                <p>Yes! All of our resources are completely free. We believe that mental health support should be
+                    accessible to all students, regardless of their financial situation. We aim to provide everything
+                    you need, without any cost barriers. 🎁💚</p>
+            </div>
+
+            <div class="faq-item">
+                <h3><span class="emoji">🔄</span>15. Can I suggest new topics or resources for the website?</h3>
+                <p>Yes, we welcome your feedback! If there's a topic or resource you'd like to see on our platform,
+                    please reach out to us. Your input helps us improve and ensure that we're addressing the real needs
+                    of students like you. 📝📬</p>
+            </div>
+
+            <p>If you have further questions that weren't covered here, don't hesitate to contact us! We're here for
+                you. 🤗</p>
+        </div>
+    </div>
+
+    <!-- main section ends here  -->
+
+    <!-- footer section start here  -->
+
+    <footer>
+        <div class="footer-options">
+            <div class="foot-logo">
                 <h1>nurture</h1>
+                <p>together, we care and support</p>
             </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button class="sign-in">Sign In</button>
+            <div class="foot-sections">
+                <ul>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                </ul>
+            </div>
+            <div class="foot-help-section">
+                <ul>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                    <li><a href="./faq.html">F.A.Q.</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="foot-policies-section">
+                <ul>
+                    <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
+                    <li><a href="./terms-of-use.html">TERM OF USE</a></li>
+                    <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
+                </ul>
+            </div>
+            <div class="foot-social-section">
+                <ul>
+                    <div class="first-social">
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                    <div class="second-social">
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    </div>
+                </ul>
             </div>
         </div>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
-        <div class="nav-options" id="nav-options">
-            <ul class="options">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./articles.html">ARTICLES</a></li>
-                <li><a href="./guides.html">GUIDES</a></li>
-                <li><a href="./resources.html">RESOURCES</a></li>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./help.html">HELP</a></li>
-            </ul>
+        <div class="footer-copywrite">
+            <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a
+                    href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
         </div>
-    </nav>
-</header>
+    </footer>
+    <!-- footer section ends here  -->
 
-<div class="container">
-    <div class="faq">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-
-        <div class="faq-item">
-            <h3><span class="emoji">❓</span>1. What is NURTURE?</h3>
-            <p>NURTURE is a safe and supportive online platform designed to help students facing mental health challenges such as stress, anxiety, peer pressure, and time management. We offer expert resources, community support, and valuable tools, all in one place, to help students take control of their well-being. 🧠💪</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">💡</span>2. Why is NURTURE focused on mental health for students?</h3>
-            <p>Students experience unique pressures—academic stress, peer pressure, and self-doubt—that can deeply affect their mental health. Unfortunately, these issues are often overlooked. Our platform shines a light on these hidden struggles and provides a safe space for students to talk, learn, and find solutions. We're here to support you! 💬🌱</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🚫</span>3. Is NURTURE a replacement for therapy?</h3>
-            <p>No, our platform is not a substitute for professional therapy. We provide resources and support to help students manage mental health issues but if you're facing severe mental health struggles, it's important to consult with a licensed professional or counselor. 💼💙</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🔑</span>4. How do I get started on the website?</h3>
-            <p>Simply start by exploring our different sections, such as stress management, coping with anxiety, or dealing with peer pressure. Use our search function to find specific topics. Creating an account allows you to save progress and personalize your experience. 💻✨</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🔒</span>5. Is my information kept private?</h3>
-            <p>Absolutely! Your privacy is our priority. We do not share your personal information, and we encourage users to avoid posting sensitive details on public forums. To understand how we handle your data, check out our Privacy Policy. 🔐</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">💬</span>6. How does the forum work?</h3>
-            <p>Our forum is a supportive, anonymous space where students can share their thoughts, ask questions, and connect with others. You'll find no judgment, only understanding. The goal is to foster empathy and help each other through difficult times. 🤝🌟</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">👥</span>7. Do I need to create an account to interact in the forum?</h3>
-            <p>No, you don't need an account to read forum discussions. However, if you want to post questions, comment, or save your progress, you'll need to create a free account. 🔑📝</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🚨</span>8. What if I need immediate help?</h3>
-            <p>If you're in immediate crisis or need urgent support, please reach out to a licensed mental health professional, contact a local crisis hotline or reach out to our help page, but our platform is not an emergency service, we provide resources to help you manage mental health on a day-to-day basis. 📞❤️</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🔍</span>9. Can I trust the resources shared on this site?</h3>
-            <p>Yes! We don't create the content ourselves, but we collaborate with mental health professionals, expert volunteers, and trusted platforms to provide accurate, reliable, and helpful resources. Our goal is to make it easy for you to access the best help available. 🌟🔗</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🤝</span>10. Can I contribute content to the site?</h3>
-            <p>If you're passionate about mental health and want to contribute, we'd love to hear from you! Whether you're a student, professional, or mental health advocate, reach out to us via our contact page or social platforms. 🌈✍️</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">💭</span>11. How do I know if I'm dealing with mental health challenges?</h3>
-            <p>If you're feeling overwhelmed, anxious, or facing issues like stress or insecurity, you might be experiencing mental health challenges. We provide resources to help you understand what you're going through and offer strategies for managing these emotions. You are not alone. 💬❤️</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🛑</span>12. Are there any resources for students who feel insecure or fear failure?</h3>
-            <p>Yes! We offer guides to help students deal with feelings of insecurity, fear of failure, and other challenges that can hold you back. These struggles are common, but they don't have to define you. Start by reading our guides on self-confidence and overcoming performance anxiety. 🌟💪</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">⚠️</span>13. Is there any way to contact someone if I feel unsafe or uncomfortable on the platform?</h3>
-            <p>If at any point you feel unsafe or uncomfortable while using our platform, please reach out to us immediately. We take safety seriously, and you can contact us via our social paltforms. Your well-being is our top priority. 📩💌</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">💸</span>14. Are the resources and services available on this platform free?</h3>
-            <p>Yes! All of our resources are completely free. We believe that mental health support should be accessible to all students, regardless of their financial situation. We aim to provide everything you need, without any cost barriers. 🎁💚</p>
-        </div>
-
-        <div class="faq-item">
-            <h3><span class="emoji">🔄</span>15. Can I suggest new topics or resources for the website?</h3>
-            <p>Yes, we welcome your feedback! If there's a topic or resource you'd like to see on our platform, please reach out to us. Your input helps us improve and ensure that we're addressing the real needs of students like you. 📝📬</p>
-        </div>
-
-        <p>If you have further questions that weren't covered here, don't hesitate to contact us! We're here for you. 🤗</p>
-    </div>
-</div>
-
-<!-- Footer  -->
-
-<footer>
-    <div class="footer-options">
-        <div class="foot-logo">
-            <h1>nurture</h1>
-            <p>together, we care and support</p>
-        </div>
-        <div class="foot-sections">
-            <ul>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./articles.html">ARTICLES</a></li>
-                <li><a href="./guides.html">GUIDES</a></li>
-                <li><a href="./resources.html">RESOURCES</a></li>
-            </ul>
-        </div>
-        <div class="foot-help-section">
-            <ul>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./help.html">HELP</a></li>
-                <li><a href="./faq.html">F.A.Q.</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
-        </div>
-        <div class="foot-policies-section">
-            <ul>
-                <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
-                <li><a href="./terms-of-use.html">TERM OF USE</a></li>
-                <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
-            </ul>
-        </div>
-        <div class="foot-social-section">
-            <ul>
-                <div class="first-social">
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </div>
-                <div class="second-social">
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                </div>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-copywrite">
-        <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
-    </div>
-</footer>
-
-
-
-<script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>

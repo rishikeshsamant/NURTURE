@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code of Conduct</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
 
     <style>
-        /* Basic reset for better cross-browser compatibility */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
             color: #333;
@@ -28,7 +23,9 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2 {
+
+        h1,
+        h2 {
             color: #333;
             margin-bottom: 20px;
         }
@@ -55,12 +52,11 @@
             margin-bottom: 10px;
         }
 
-        /* Emoji styling */
         .emoji {
             font-size: 1.5rem;
         }
 
-        /* Responsive styles */
+        /* Responsive styles start here */
         @media (max-width: 768px) {
             .container {
                 width: 100%;
@@ -81,153 +77,184 @@
         }
     </style>
 </head>
+
 <body>
 
-<!-- Header  -->
+    <!-- Header start here -->
 
-<header>
-    <nav>
-        <div class="logo">
-            <div class="heading">
+    <header>
+        <nav>
+            <div class="logo">
+                <div class="heading">
+                    <h1>nurture</h1>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <button class="sign-in">Sign In</button>
+                </div>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="nav-options" id="nav-options">
+                <ul class="options">
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- header ends here  -->
+
+
+    <!-- main section start here  -->
+
+    <div class="container">
+        <div class="content">
+            <h2>Code of Conduct</h2>
+            <p><strong>Last Updated: 2024-11-08</strong></p>
+
+            <p>Welcome to <strong>NURTURE</strong>! 🌟 We're creating a community where students can come together,
+                support one another, and find the mental health resources they need in a safe, inclusive, and welcoming
+                space. To keep things positive and productive, we’ve created this Code of Conduct. By being a part of
+                our community, you’re agreeing to follow these guidelines and help us build a space where everyone feels
+                respected and heard. 🙌💬</p>
+
+            <h3>1. <span class="emoji">🤝💖</span> Be Kind & Respectful</h3>
+            <p>We believe in fostering a space of kindness, understanding, and empathy. Treat everyone with
+                respect—whether they're sharing a personal story, asking for advice, or simply interacting with others.
+                This means:</p>
+            <ul>
+                <li>Use kind and positive language - we're here to support, not to tear down.</li>
+                <li>Listen with empathy - understand that everyone's struggles are different, and that's okay.</li>
+                <li>Be patient - not everyone is in the same place emotionally or mentally, and that's important to
+                    remember.</li>
+            </ul>
+
+            <h3>2. <span class="emoji">🌈💭</span> Stay Open-Minded</h3>
+            <p>We all come from different backgrounds and experiences, so let's embrace the diversity of thoughts,
+                feelings, and perspectives. Keep an open heart and mind, even if someone's viewpoint or experience is
+                different from your own.</p>
+            <ul>
+                <li>Celebrate diversity - everyone's voice matters and adds value to our community.</li>
+                <li>Be willing to learn - we're all here to grow and support each other.</li>
+            </ul>
+
+            <h3>3. <span class="emoji">💬💖</span> Be Supportive, Not Judgmental</h3>
+            <p>We're here to lift each other up, not judge. Whether you're asking for help or offering advice, keep it
+                compassionate and constructive.</p>
+            <ul>
+                <li>Offer support, not criticism - encourage others by offering helpful insights, not unsolicited
+                    advice.</li>
+                <li>Respect privacy - if someone shares something personal, keep it in confidence. We're all here to
+                    help, not expose vulnerabilities.</li>
+            </ul>
+
+            <h3>4. <span class="emoji">💡❤️</span> Be Honest, But Be Kind</h3>
+            <p>Honesty is key in a supportive community, but it's important to be mindful of how you communicate. If you
+                have something to say, be truthful, but always keep other's feelings in mind.</p>
+            <ul>
+                <li>Communicate openly - feel free to share your thoughts, but do so with care and consideration.</li>
+                <li>Avoid hurtful comments - honesty shouldn't come at the expense of another's feelings.</li>
+            </ul>
+
+            <h3>5. <span class="emoji">🚫💔</span> No Tolerance for Harmful Behavior</h3>
+            <p>We have a zero-tolerance policy for any form of harassment, hate speech, or harmful behavior. We're here
+                to create a positive space for everyone, and any behavior that threatens the safety or well-being of our
+                members will not be tolerated.</p>
+            <ul>
+                <li>No bullying, hate speech, or discrimination - we stand together, no matter our differences.</li>
+                <li>Report harmful behavior - if you witness something inappropriate, please let us know. We're here to
+                    help.</li>
+            </ul>
+
+            <h3>6. <span class="emoji">🛡️🔒</span> Respect Privacy & Anonymity</h3>
+            <p>This is a space where students can feel safe to express themselves without fear of exposure. Protecting
+                everyone's privacy and anonymity is our priority.</p>
+            <ul>
+                <li>Don't share others' personal information - unless someone has explicitly shared something publicly
+                    and given permission to share, respect their privacy.</li>
+                <li>Stay anonymous if needed - feel free to express yourself in the way that makes you feel most
+                    comfortable.</li>
+            </ul>
+
+            <h3>7. <span class="emoji">🌟😊</span> Keep It Real, Keep It Positive</h3>
+            <p>We know that life isn't always easy, but we're here to make it a little brighter for each other. Stay
+                optimistic and keep the energy positive—it's contagious!</p>
+            <ul>
+                <li>Be uplifting - share your experiences, but focus on what you've learned and how you're growing.</li>
+                <li>Stay focused on solutions - we all have struggles, but let's find ways to overcome them together.
+                </li>
+            </ul>
+
+            <p>Together, we can create a community where every student feels safe, supported, and understood. Thank you
+                for being part of our journey to make mental health resources more accessible and empowering. Let's
+                build something amazing—together. 💪🌻</p>
+
+            <p><strong>Remember</strong>: We're all human, and we're here to learn, grow, and help one another. Stay
+                kind, stay safe, and always feel free to reach out if you need support. 💙</p>
+        </div>
+    </div>
+
+    <!-- main section ends here  -->
+
+
+    <!-- footer section start here  -->
+
+    <footer>
+        <div class="footer-options">
+            <div class="foot-logo">
                 <h1>nurture</h1>
+                <p>together, we care and support</p>
             </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button class="sign-in">Sign In</button>
+            <div class="foot-sections">
+                <ul>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./articles.html">ARTICLES</a></li>
+                    <li><a href="./guides.html">GUIDES</a></li>
+                    <li><a href="./resources.html">RESOURCES</a></li>
+                </ul>
+            </div>
+            <div class="foot-help-section">
+                <ul>
+                    <li><a href="./community.html">COMMUNITY</a></li>
+                    <li><a href="./help.html">HELP</a></li>
+                    <li><a href="./faq.html">F.A.Q.</a></li>
+                    <li><a href="./contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="foot-policies-section">
+                <ul>
+                    <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
+                    <li><a href="./terms-of-use.html">TERM OF USE</a></li>
+                    <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
+                </ul>
+            </div>
+            <div class="foot-social-section">
+                <ul>
+                    <div class="first-social">
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </div>
+                    <div class="second-social">
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+                    </div>
+                </ul>
             </div>
         </div>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button> <!-- Menu toggle button -->
-        <div class="nav-options" id="nav-options">
-            <ul class="options">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./articles.html">ARTICLES</a></li>
-                <li><a href="./guides.html">GUIDES</a></li>
-                <li><a href="./resources.html">RESOURCES</a></li>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./help.html">HELP</a></li>
-            </ul>
+        <div class="footer-copywrite">
+            <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
         </div>
-    </nav>
-</header>
+    </footer>
 
+    <!-- footer section ends here  -->
 
-<div class="container">
-    <div class="content">
-        <h2>Code of Conduct</h2>
-        <p><strong>Last Updated: 2024-11-08</strong></p>
-
-        <p>Welcome to <strong>NURTURE</strong>! 🌟 We're creating a community where students can come together, support one another, and find the mental health resources they need in a safe, inclusive, and welcoming space. To keep things positive and productive, we’ve created this Code of Conduct. By being a part of our community, you’re agreeing to follow these guidelines and help us build a space where everyone feels respected and heard. 🙌💬</p>
-
-        <h3>1. <span class="emoji">🤝💖</span> Be Kind & Respectful</h3>
-        <p>We believe in fostering a space of kindness, understanding, and empathy. Treat everyone with respect—whether they're sharing a personal story, asking for advice, or simply interacting with others. This means:</p>
-        <ul>
-            <li>Use kind and positive language - we're here to support, not to tear down.</li>
-            <li>Listen with empathy - understand that everyone's struggles are different, and that's okay.</li>
-            <li>Be patient - not everyone is in the same place emotionally or mentally, and that's important to remember.</li>
-        </ul>
-
-        <h3>2. <span class="emoji">🌈💭</span> Stay Open-Minded</h3>
-        <p>We all come from different backgrounds and experiences, so let's embrace the diversity of thoughts, feelings, and perspectives. Keep an open heart and mind, even if someone's viewpoint or experience is different from your own.</p>
-        <ul>
-            <li>Celebrate diversity - everyone's voice matters and adds value to our community.</li>
-            <li>Be willing to learn - we're all here to grow and support each other.</li>
-        </ul>
-
-        <h3>3. <span class="emoji">💬💖</span> Be Supportive, Not Judgmental</h3>
-        <p>We're here to lift each other up, not judge. Whether you're asking for help or offering advice, keep it compassionate and constructive.</p>
-        <ul>
-            <li>Offer support, not criticism - encourage others by offering helpful insights, not unsolicited advice.</li>
-            <li>Respect privacy - if someone shares something personal, keep it in confidence. We're all here to help, not expose vulnerabilities.</li>
-        </ul>
-
-        <h3>4. <span class="emoji">💡❤️</span> Be Honest, But Be Kind</h3>
-        <p>Honesty is key in a supportive community, but it's important to be mindful of how you communicate. If you have something to say, be truthful, but always keep other's feelings in mind.</p>
-        <ul>
-            <li>Communicate openly - feel free to share your thoughts, but do so with care and consideration.</li>
-            <li>Avoid hurtful comments - honesty shouldn't come at the expense of another's feelings.</li>
-        </ul>
-
-        <h3>5. <span class="emoji">🚫💔</span> No Tolerance for Harmful Behavior</h3>
-        <p>We have a zero-tolerance policy for any form of harassment, hate speech, or harmful behavior. We're here to create a positive space for everyone, and any behavior that threatens the safety or well-being of our members will not be tolerated.</p>
-        <ul>
-            <li>No bullying, hate speech, or discrimination - we stand together, no matter our differences.</li>
-            <li>Report harmful behavior - if you witness something inappropriate, please let us know. We're here to help.</li>
-        </ul>
-
-        <h3>6. <span class="emoji">🛡️🔒</span> Respect Privacy & Anonymity</h3>
-        <p>This is a space where students can feel safe to express themselves without fear of exposure. Protecting everyone's privacy and anonymity is our priority.</p>
-        <ul>
-            <li>Don't share others' personal information - unless someone has explicitly shared something publicly and given permission to share, respect their privacy.</li>
-            <li>Stay anonymous if needed - feel free to express yourself in the way that makes you feel most comfortable.</li>
-        </ul>
-
-        <h3>7. <span class="emoji">🌟😊</span> Keep It Real, Keep It Positive</h3>
-        <p>We know that life isn't always easy, but we're here to make it a little brighter for each other. Stay optimistic and keep the energy positive—it's contagious!</p>
-        <ul>
-            <li>Be uplifting - share your experiences, but focus on what you've learned and how you're growing.</li>
-            <li>Stay focused on solutions - we all have struggles, but let's find ways to overcome them together.</li>
-        </ul>
-
-        <p>Together, we can create a community where every student feels safe, supported, and understood. Thank you for being part of our journey to make mental health resources more accessible and empowering. Let's build something amazing—together. 💪🌻</p>
-
-        <p><strong>Remember</strong>: We're all human, and we're here to learn, grow, and help one another. Stay kind, stay safe, and always feel free to reach out if you need support. 💙</p>
-    </div>
-</div>
-
-<!-- Footer  -->
-
-<footer>
-    <div class="footer-options">
-        <div class="foot-logo">
-            <h1>nurture</h1>
-            <p>together, we care and support</p>
-        </div>
-        <div class="foot-sections">
-            <ul>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./articles.html">ARTICLES</a></li>
-                <li><a href="./guides.html">GUIDES</a></li>
-                <li><a href="./resources.html">RESOURCES</a></li>
-            </ul>
-        </div>
-        <div class="foot-help-section">
-            <ul>
-                <li><a href="./community.html">COMMUNITY</a></li>
-                <li><a href="./help.html">HELP</a></li>
-                <li><a href="./faq.html">F.A.Q.</a></li>
-                <li><a href="./contact.html">CONTACT US</a></li>
-            </ul>
-        </div>
-        <div class="foot-policies-section">
-            <ul>
-                <li><a href="./code-of-conduct.html">CODE OF CONDUCT</a></li>
-                <li><a href="./terms-of-use.html">TERM OF USE</a></li>
-                <li><a href="./privacy-policy.html">PRIVACY & POLICY</a></li>
-            </ul>
-        </div>
-        <div class="foot-social-section">
-            <ul>
-                <div class="first-social">
-                    <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                </div>
-                <div class="second-social">
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                </div>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-copywrite">
-        <p>© 2024 NURTURE. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-use.html">Terms of Use</a> | <a href="code-of-conduct.html">Code of Conduct</a></p>
-    </div>
-</footer>
-
-
-
-<script src="assets/js/script.js"></script>
-
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
