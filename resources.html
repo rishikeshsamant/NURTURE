@@ -7,6 +7,128 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <style>
+        /* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.resources-content {
+    margin-top: 30px;
+}
+
+/* Resource Cards Section */
+.resources-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column grid */
+    gap: 30px; /* Space between cards */
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 1024px) {
+    /* For tablets or small desktops: */
+    .resources-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* For tablets and smaller devices: */
+    .resources-cards {
+        grid-template-columns: 1fr; /* 1 card per row */
+    }
+
+    .card img {
+        height: 250px; /* Increase image height for mobile */
+    }
+    
+    .card h4 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* For smaller mobile screens: */
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+}
+
+    </style>
 </head>
 <body>
     <!-- Header  -->
@@ -37,6 +159,57 @@
         </nav>
     </header>
 
+    <div class="container">
+        <div class="intro">
+            <h2>Student Mental Health Resources</h2>
+        </div>
+
+
+        <div class="resources-content">
+            <h3>Resources</h3>
+
+            <div class="resources-cards">
+                <div class="card">
+                    <img src="./assets/images/resources/resource-01.jpg" alt="Meditation & Mindfulness Apps">
+                    <h4>Meditation & Mindfulness Apps</h4>
+                    <p>Discover tools to help manage stress and improve mental well-being through mindfulness and meditation practices. These apps provide guided sessions for relaxation, focus, and emotional balance.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/resources/resource-02.jpg" alt="Peer Support Groups & Networks">
+                    <h4>Peer Support Groups & Networks</h4>
+                    <p>Connect with others who understand your experiences through peer support groups. These groups offer a safe space for students to share challenges and provide mutual support.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/resources/resource-03.png" alt="Self-Help Tools and Apps">
+                    <h4>Self-Help Tools and Apps</h4>
+                    <p>Access apps and online resources designed to help students manage mental health, track moods, and develop coping strategies. These tools offer practical ways to work on mental well-being independently.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/resources/resource-04.jpg" alt="Legal and Financial Support">
+                    <h4>Legal and Financial Support</h4>
+                    <p>Resources that provide legal aid, financial assistance, and guidance for students facing mental health challenges related to housing, discrimination, or financial stress.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/resources/resource-05.jpg" alt="Fitness & Physical Health Resources">
+                    <h4>Fitness & Physical Health Resources</h4>
+                    <p>Explore fitness programs, exercises, and routines that help support mental health. Physical activity is a great way to reduce stress and improve overall well-being.</p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/resources/resources-06.jpg" alt="Student Mental Health Stories & Testimonials">
+                    <h4>Student Mental Health Stories & Testimonials</h4>
+                    <p>Real stories from students who have faced mental health challenges and have found ways to cope and thrive. These inspiring accounts can offer hope and practical advice.</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
 
     <!-- Footer  -->
 
